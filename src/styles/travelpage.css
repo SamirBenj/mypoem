@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'HalantRegular';
+    src: url('../assets/Halant/Halant-Regular.ttf');
+}
+
+.titleTravel p {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'HalantSemiBold';
+}
+
+.titleTravel hr{
+    margin-bottom: 20px;
+}
+.travelGrid{
+    height: 400px;
+    display: grid;   
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 0px;
+    margin-top: 40px;
+}
+
+.travelGrid .grid1{
+    display: flex;
+    text-align: center;
+    background-color: #323232;
+    /* height: 200px; */
+    justify-content: center;
+    align-items: center;
+    /* afin d'utiliser cela il faut utilisr display flex */
+}
+.travelGrid .grid2{
+    background-color: #3b3737;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.travelGrid .grid2 .imgSlider{
+    width: 300px;
+
+}
+.travelGrid .grid1 p {
+    font-size: 30px;
+    line-height: 1.9cm;
+    color: white;
+}
+
+.travelGrid .grid1 .testText{
+    /* content: ""; */
+    color: #e1e1e1;
+    position: absolute;
+    background-color: #323232;
+    overflow: hidden;
+    border-right: 3px solid;
+    /* white-space: nowrap; */
+
+    animation: typing 2s steps(22), blink .5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
