@@ -35,13 +35,16 @@ body {
     margin:auto;
     /* align-items: center; */
     background-color: #323232;
-    width: 400px;
+    width: 500px;
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 50px;
     box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.61);
+    /* transform: scale(1.02); */
+    transition: 0.9s;
+
 }
 .mainCard:hover{
-    transition: 0.9s;
+    /* transition: 0.9s; */
     transform: scale(1.02);
 
 }
@@ -65,7 +68,7 @@ body {
 .mainCard #names{
     width: 800px;
     text-align: center;
-    margin-left: -285px;
+    margin-left: -205px;
     justify-content: space-between;
     
 }
@@ -114,9 +117,17 @@ body {
 
 }
 .mainButton {
+
     display: flex;
     justify-content: end;
     position: absolute;
     bottom: 50px;
     width: 100%;
+    transition: 1.1s;
 }
+
+.mainButton:hover{
+    margin-right: 50px;
+    transform: scale(1.02);
+}
+

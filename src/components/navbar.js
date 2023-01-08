@@ -30,9 +30,9 @@ const NavBar = ()=> {
 			<p id="navLogo">S.B</p>
 			<nav ref={navRef}>
 				<a href="/#">Home</a>
-				<a href="/#">Référence</a>
+				<a href="/projet">Le Projet</a>
 				<a href="/about">À Propos</a>
-				<a href="/#">Qui suis je ?</a>
+				<a href="/imageslider">Images</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

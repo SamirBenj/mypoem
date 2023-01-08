@@ -1,0 +1,29 @@
+.sliderClass{
+     display: grid;
+     grid-template-columns: repeat(1,0fr);
+     align-items: center;
+     justify-content: center;
+     /* width: 100%; */
+     margin: auto;
+     margin-top: 60px;
+     background-color: #323232;
+    width: 500px;
+     padding: 40px;
+     box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.61);
+
+
+}
+
+.sliderClass .grid1{
+
+    width: 300px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* background-size: contain; */
+}
+
+.sliderClass .grid1 #title{
+    text-align: center;
+    color: white;
+    
+}

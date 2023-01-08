@@ -3,9 +3,13 @@
     src: url('../assets/Halant/Halant-Regular.ttf');
 }
 
+
+
 .titleTravel p {
     text-align: center;
     font-size: 35px;
+    margin-top: 20px;
+    justify-content: center;
     color: white;
     font-family: 'HalantSemiBold';
 }
@@ -18,16 +22,22 @@
     display: grid;   
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 0px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .travelGrid .grid1{
     display: flex;
     text-align: center;
     background-color: #323232;
-    /* height: 200px; */
+    /* background: url('../assets/rose_img.JPG'); */
+    background-position: top;
+    /* height: 360px; */
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* z-index: 0; */
     /* afin d'utiliser cela il faut utilisr display flex */
 }
 .travelGrid .grid2{
@@ -44,7 +54,7 @@
 }
 .travelGrid .grid1 p {
     font-size: 30px;
-    line-height: 1.9cm;
+    line-height: 1.3cm;
     color: white;
 }
 
@@ -71,3 +81,17 @@
       border-color: transparent
     }
   }
+
+.travelGrid .grid1 {
+    display: grid;
+    /* grid-template-columns: repeat(1fr); */
+    row-gap: 0px;
+}
+
+.slideSwiper .container {
+    background-color: #3b3737;
+}
+
+#classTypeWriter{
+    display: block;
+}

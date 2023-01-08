@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'HalantLight';
+    src: url('../assets/Halant/Halant-Light.ttf');
+}
+.divBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+
+}
+
+.divBack .Img{
+     height: 400px;
+     object-fit: cover;
+    width: 100%;
+}
+
+.cardReal {
+   
+    background-color: #323232;
+    position: absolute;
+    left: 50%;                        /* horizontal alignment */
+    top: 60%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* shift the image back to center */
+    width: 60%;
+    height: auto;
+    /* border: 1px solid red; */
+    padding: 20px;
+    box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.61);
+
+}
+
+.cardReal p{
+    color: white;
+    line-height: 1.1cm;
+    font-family: 'HalantLight';
+    text-align: justify;
+}
+.cardReal #title{
+    font-size: 25px;
+}
+
+.cardReal .secondImage img{
+    height: 170px;
+    object-fit: cover;
+    width: 400px;
+    border: 3px solid black;
+
+}
+
+.cardReal .secondImage{
+    position: absolute;
+    left: 80%;                        /* horizontal alignment */
+    top: 115%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* shift the image back to center */
+    width: 40%;
+    /* height: auto; */
+}
+
+/*////////////////////////*/
+.mainDiv2{
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+.cardRef #title{
+    font-size: 25px;
+
+}
+.cardRef {
+    background-color: #323232;
+    position: relative;
+    margin-top: 270px;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.61);
+
+}
+.cardRef p{
+    color: white;
+    line-height: 1.1cm;
+    font-family: 'HalantLight';
+    text-align: end;
+    font-size: 18px;
+}
+.cardRef .thirdImage img{
+    height: 170px;
+    object-fit: cover;
+    width: 400px;
+    border: 3px solid black;
+
+}
+.cardRef .thirdImage{
+    position: absolute;
+    left: 20%;                        /* horizontal alignment */
+    top: 105%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* shift the image back to center */
+    width: 60%;
+    /* height: auto; */
+}
+
+/*////////////////////////*/
+.mainDiv3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.cardWeb #title{
+    font-size: 25px;
+
+}
+.cardWeb {
+    background-color: #323232;
+    position: relative;
+    margin-top: 200px;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.61);
+
+}
+.cardWeb p{
+    color: white;
+    line-height: 1.1cm;
+    font-family: 'HalantLight';
+    text-align: center;
+    font-size: 18px;
+}
+.cardWeb .fourthImage img{
+    height: 170px;
+    object-fit: cover;
+    width: 400px;
+    border: 3px solid black;
+
+}
+.cardWeb .fourthImage{
+    margin-top: 10px;
+    text-align: center;
+}

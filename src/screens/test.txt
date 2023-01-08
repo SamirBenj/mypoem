@@ -1,0 +1,167 @@
+import React, { useEffect } from "react";
+import "../styles/travelpage.css";
+import "../styles/swiper.css";
+import { gsap } from "gsap";
+
+import Footer from "../components/footer";
+import NavBar from "../components/navbar";
+import ReactCompareImage from "react-compare-image";
+import robotHumanImg from "../assets/robothuman.png"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { A11y, EffectCube, EffectFade, Navigation, Pagination, Scrollbar } from "swiper";
+
+import 'swiper/css'; // core Swiper
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import 'swiper/css/effect-cube';
+import Typical from "react-typical";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+// import 'swiper/modules/navigation/navigation.scss'; // Navigation module
+// import 'swiper/modules/pagination/pagination.scss'; // Pagination module
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin,Scrollbar)
+
+gsap.config({ trialWarn: false });
+
+
+
+const TestSlide = () =>{
+    
+    const slideInTop = (elem, delay,duration) =>{
+        gsap.to(
+            elem,
+            // {
+            //     opacity: 0,
+            //     y: -200,
+            // },
+            {
+                // opacity:1,
+                // y:0,
+                // duration:0.6,
+                backgroundPositionX:"0%",
+                stagger:1,
+                scrollTrigger:{
+                    // trigger:elem,
+                    // start:"top center",
+                    // end:"bottom center"
+                    trigger: elem,
+                    // markers: true,
+                    scrub: 1,
+                    start: "top center",
+                    end: "bottom top"
+                }
+            }
+        ) 
+    }
+   useEffect(() => {
+    console.log('hell');
+    // gsap.registerPlugin(ScrollTrigger);
+    slideInTop('.text p')
+   }, [slideInTop('.text p')])
+   
+    return(
+        <div>
+            <NavBar></NavBar>
+            <div className="titleTravel">
+                <p>POOR HUMANOÏDE</p>
+                <hr
+                style={{
+                    margin:"auto",
+                    marginTop:"0px",
+                    marginBottom:"10px",
+                    color: "white",
+                    backgroundColor: "white",
+                    height: 3,
+                    width:"170px",
+                }}/>          
+            </div>
+                <div className="slideSwiper">
+                    <Swiper
+                        className="mySwiper"
+                        navigation={true} 
+                        modules={[Navigation, EffectFade, EffectCube]}
+                        slidesPerView={1}
+                        spaceBetween={3}
+                        grabCursor={true}
+                        scrollbar={true}
+                        effect={"cube"}
+                        direction={"vertical"}
+                        onSwiper={()=>console.log(1)}
+                    >
+                        <SwiperSlide style={{backgroundColor:'', textAlign:'center'}}>
+                            <div className="travelGrid">
+                                <section className="grid1">
+                                    <p>
+                                        <Typical
+                                        steps={[
+                                            'Hello', 
+                                            700, 
+                                            'Hello les carcasses humaines fleurissent ', 
+                                            200
+                                        ]}
+                                        // loop={Infinity}
+                                        wrapper="p"
+                                        />
+                                    </p>
+                                
+                                    <p>
+                                        <Typical
+                                        steps={[
+                                            'Hello', 
+                                            1000, 
+                                            'Hello les carcasses humaines fleurissent ', 
+                                            500
+                                        ]}
+                                        wrapper="p"
+                                        />
+                                    </p>                               
+                                </section>
+                                <section className="grid2">
+                                    <div className="imgSlider">
+                                        <img src={robotHumanImg} width="300px"/>
+                                        
+                                    </div>
+                                </section>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide style={{backgroundColor:'red'}}>
+                            <img src={robotHumanImg} width="200px"/>
+                            <p>
+                                        <Typical
+                                        steps={[
+                                            'Hello', 
+                                            1000, 
+                                            'Hello les carcasses humaines fleurissent ', 
+                                            500
+                                        ]}
+                                        wrapper="p"
+                                        />
+                                    </p>          
+                        </SwiperSlide>
+
+                        <SwiperSlide style={{backgroundColor:'red'}}>
+                            <img src={robotHumanImg} width="200px"/>
+                            <div className="container" id="myBox">
+                                <div className="text">
+                                    <p>Suprising</p>
+                                    <p>and playful ways</p>
+                                    <p>to tell a story!</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper> 
+                </div>
+                 {/* <div className="text" style={{fontSize:'200px'}}>
+                                    <p>Suprising</p>
+                                    <p>and playful ways</p>
+                                    <p>to tell a story!</p>
+                                </div> */}
+          
+            <Footer></Footer>
+        </div>
+    )
+}
+
+export default TestSlide
