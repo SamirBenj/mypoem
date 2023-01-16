@@ -139,3 +139,26 @@
     margin-top: 10px;
     text-align: center;
 }
+
+.cardRef #refText b{
+    transition: 0.9s;
+}
+
+.cardRef #refText b:hover{
+    /* transition: 1s; */
+      /* transform: scale(1.09); */
+    background-color: rgb(247, 247, 247);
+    color: black;
+}
+
+b{
+    transition: 0.9s;
+
+}
+
+b:hover{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}

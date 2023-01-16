@@ -32,7 +32,7 @@ const AboutPage = ()=>{
                     <p id="para1" data-aos="fade-up">
                         L ’ idée est de présenter un poème auquel une personne de type humanoïde exprimant son état de penser, 
                         et son affection qu’aurait tout humain. 
-                        Quoi de mieux qu’un poème, une œuvre consacrée plus généralement au thématique de l’amour, 
+                        Quoi de mieux qu’un poème, une œuvre consacrée plus généralement aux thématiques de l’amour, 
                         des sentiments, des craintes et de la joie que l’humain éprouve et ressent de manière profonde avec ce support. 
                         <br></br>Ainsi, à travers son écrit, une description de la personnalité du robot est dépeinte afin de donner l’image d’une personne 
                         avec de la sensibilité voire d’une proximité avec nous. 

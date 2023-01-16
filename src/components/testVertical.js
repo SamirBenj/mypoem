@@ -29,7 +29,7 @@ import music1 from '../assets/sad_music.mp3';
 import glitchSound from '../assets/glitch_sound.mp3';
 
 import ReactHowler from "react-howler";
-import { AiFillPlayCircle, AiOutlineSound } from "react-icons/ai";
+import { AiFillPauseCircle, AiFillPlayCircle, AiOutlineSound } from "react-icons/ai";
 import GlitchSquiggly from 'react-glitch-effect/core/GlitchSquiggly';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import { Typewriter } from "react-simple-typewriter";
@@ -74,6 +74,10 @@ const TestSlide = () =>{
     const backgroundmusic = ()=>{
         audio1.play();
     }
+    const pauseMusic =()=>{
+        audio1.pause();
+        audio2.pause();
+    }
    
     const handleToggleGlitch = () => {
             setDisabled(!isDisabled);
@@ -92,6 +96,7 @@ const TestSlide = () =>{
                 <AiOutlineSound size={30} color="white" ></AiOutlineSound>
                  <AiFillPlayCircle size={30} color="white" onClick={()=>backgroundmusic()}>
                 </AiFillPlayCircle>
+                <AiFillPauseCircle size={30} color="white" onClick={()=>pauseMusic()}></AiFillPauseCircle>
             </p>
             <div className="titleTravel" data-aos="fade-up" >
                 <p>MISERABLE HUMAN</p>        

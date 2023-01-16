@@ -49,7 +49,7 @@ const TextSlider =()=>{
                     })}
    
                     <AiOutlineArrowLeft className="prev" onClick={()=>setIndex(index - 1)}></AiOutlineArrowLeft>
- 
+
                     <AiOutlineArrowRight className="next" onClick={()=>setIndex(index + 1)}></AiOutlineArrowRight>
                 </div>
             </div>
