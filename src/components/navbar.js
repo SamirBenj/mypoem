@@ -33,6 +33,7 @@ const NavBar = ()=> {
 				<a href="/projet">Le Projet</a>
 				<a href="/about">À Propos</a>
 				<a href="/imageslider">Images</a>
+				<a href="">Vidéo</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

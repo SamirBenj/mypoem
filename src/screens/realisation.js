@@ -120,7 +120,9 @@ useEffect(() => {
                         les fonctionnalités possibles, etc. . Ensuite, après la finalisation du site web, j'ai 
                         utilisé <b>Firebase Hosting</b> qui m'a donc permis d'herbéger le site web en ligne.
                     </p>
-                    <p>Code Source: </p>
+                    <p><b><u><b></b>Code Source: <a style={{color:'white'}}  href="https://github.com/SamirBenj/mypoem">Cliquez ici</a></u></b></p>
+                    <p><b><u>Lien Conception UI/UX: <a style={{color:'white'}}  href="https://www.figma.com/file/3wHKOnhpokh3MjfagjDa0R/Website-Kerinska-Project?node-id=0%3A1&t=OdISzEUbqH79lSMc-1">Cliquez ici !</a></u></b></p>
+
                     <div className="fourthImage">
                         <img src={figma_photo} />
                     </div>
